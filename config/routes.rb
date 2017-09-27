@@ -5,5 +5,9 @@ Rails.application.routes.draw do
     root 'application#index'
   end
 
+  namespace :api do
+    resources :books
+  end
+
   root 'welcome#index'
 end
