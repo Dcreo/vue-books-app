@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   end
 
   namespace :api do
-    resources :books
+    namespace :manage do
+      resources :books
+    end
   end
 
   root 'welcome#index'

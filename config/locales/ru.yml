@@ -1,0 +1,8 @@
+ru:
+  activerecord:
+    errors:
+      models:
+        book:
+          attributes:
+            name:
+              blank: 'Название книги не может быть пустым'

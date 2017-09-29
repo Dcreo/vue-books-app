@@ -1,5 +1,6 @@
 import VueRouter from 'vue-router'
-import {books, newBook} from '../components/books.js'
+import {books} from '../components/books.js'
+import {newBook} from '../components/new_book.js'
 
 const routes = [
   { path: '/books', name: 'books', component: books },

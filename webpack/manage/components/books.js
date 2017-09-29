@@ -15,7 +15,7 @@ const books = {
   methods: {
     getBooks: function() {
       self = this;
-      axios.get('/api/books')
+      axios.get('/api/manage/books')
         .then(function(response){
           self.books = response.data;
         })
@@ -23,8 +23,4 @@ const books = {
   }
 }
 
-const newBook = {
-  template: '<h1>Новая книга</h1>'
-}
-
-export {books, newBook}
+export {books}
