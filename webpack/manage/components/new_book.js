@@ -20,6 +20,8 @@ const newBook = {
       axios.post('/api/manage/books', { book: this.book })
         .then(function(response){
           self.checkValidationErrors(response);
+        }).catch(function(error){
+          console.log('Возникли ошибки доступа к серверу');
         });
     },
     checkValidationErrors: function(response) {
